@@ -1,0 +1,16 @@
+// address
+
+.address {
+  font-style: normal;
+}
+.address__location {
+  color: $colorText;
+  margin-bottom: 9px;
+  display: block;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $activeColor;
+  }
+}
+

@@ -1,0 +1,39 @@
+/* --- first-screen */
+
+.first-screen {
+  background-color: $sectionBg;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/bg.jpg);
+  background-size: cover;
+  text-align: center;
+  // height: 600px;
+  height: 400px;
+  // max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  & .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.first-screen__wrapper {
+  width: 696px;
+}
+.first-screen__title {
+  @include fonts($colorText, null, 44px, 900, 1.36, 0.06em);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px){
+    @include fonts($colorText, null, 26px, 900, 1.6, 0.06em);
+  }
+}
+.first-screen__btn {
+  @include btn();
+  padding: 10px 32px;
+}

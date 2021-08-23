@@ -1,0 +1,89 @@
+// portfollio content
+
+.content-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.content-list__item {
+  margin: 15px;
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.content-list__link {
+  @extend %link;
+  display: inline-block;
+  position: relative;
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.content-list__wrapper-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 100%;
+  
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+  
+    transform: translateY(100%);
+    transition: 0.25s linear;
+    .content-list__item:hover &,
+    .content-list__link:focus & {
+      opacity: 1;
+      transform: translateY(0%);
+      overflow: auto;
+    }
+  }
+  & > p {
+    @include fonts($colorText, null, 18px, null, 1.6, null);
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+    width: 100%;
+    height: 100%;
+    padding: 60px 24px;
+  
+    opacity: 0;
+    transform: translateY(100%);
+    transition-property: opasity, transform;
+    transition: 0.25s linear;
+    .content-list__item:hover &,
+    .content-list__link:focus & {
+      opacity: 1;
+      transform: translateY(0%);
+      overflow: auto;
+    }
+  }
+}
+
+.content-list__wrapper-text {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.content-list__tittle {
+  @include fonts($primaryColor, null, 18px, null, 2, 0.06em,);
+}
+
+.content-list__text {
+  @include fonts($secondaryColor, null, 16px, null, 1.86, null);
+}

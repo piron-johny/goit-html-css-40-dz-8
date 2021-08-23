@@ -1,0 +1,9 @@
+/* Шапка сайта */
+.header {
+  @include fonts(null, null, null, 500, 1.14, 0.02em);
+  .container {
+    display: flex;
+  } 
+}
+
+
