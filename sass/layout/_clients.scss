@@ -3,14 +3,20 @@
 .clients {
   padding: 94px 0px;
 }
-.clients__list {
-  display: flex;
-}
+
 .clients__title {
   @extend %title__section;
 }
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
 .clients__item {
-  width: 170px;
+  // width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -18,8 +24,12 @@
   &:focus {
     border: 1px solid $activeColor;
   }
-  &:not(:last-child) {
-    margin-right: 30px;
+  margin: 15px;
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+  @media screen and (max-width: 479px) {
+    width: 100%;    
   }
 }
 .clients__link {

@@ -1,8 +1,8 @@
 /* --- advantages */
 
 .advantages {
-  padding-top: 94px;
-  padding-bottom: 47px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .advantages__title {
@@ -10,13 +10,13 @@
 }
 
 .advantages__list {
-  display: flex;
+  // display: flex;
 }
 
 .advantages__item {
-  width: 270px;
+  width: 100%;
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -34,6 +34,7 @@
   @include fonts($primaryColor, null, null, 700, 1.14, null);
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .advantages__text {

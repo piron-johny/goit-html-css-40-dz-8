@@ -6,12 +6,13 @@
 }
 
 .footer__address {
-  margin-right: 70px;
+  // margin-right: 70px;
+  margin-bottom: 60px;
 }
 
 .footer__social-title,
 .footer__form-title {
-  @include fonts($colorText, null, 16px, 700, 1.14, null);
+  @include fonts($colorText, null, 14px, 700, 1.14, null);
   text-transform: uppercase;
   margin-bottom: 20px;
 }
