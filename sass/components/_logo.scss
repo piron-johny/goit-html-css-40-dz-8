@@ -1,10 +1,9 @@
 // logo
 
 .logo {
-  @extend %link;
-  @include fonts(#000000, Raleway, 26px, 700, 1.2, null);
+  @include fonts(#000000, Raleway, 24px, 700, 1.2, null);
   // margin-right: 93px;
-  padding: 24px 0px;
+  padding: 16px 0px;
   & span {
     color: $activeColor;
   }

@@ -37,8 +37,9 @@
 }
 
 .contacts__link {
-  @extend %link;
-  @include fonts($secondaryColor, null, null, 500, 1.14, 00.02em);
+  ;
+  // @include fonts($secondaryColor, null, null, 500, 1.14, 00.02em);
+  @include fonts($secondaryColor, null, null, 400, 1.7, null);
   display: flex;
   align-items: center;
   padding: 32px 0;

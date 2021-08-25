@@ -17,7 +17,7 @@
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 528px;
+  width: 450px;
   background-color: $colorText;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -28,9 +28,10 @@
   transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
     visibility 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   & strong {
-    @include fonts($primaryColor, null, 20px, 700, 1.15, null);
+    @include fonts($primaryColor, null, 20px, 700, 1.5, null);
     display: block;
     margin-bottom: 12px;
+    text-align: center;
   }
 }
 

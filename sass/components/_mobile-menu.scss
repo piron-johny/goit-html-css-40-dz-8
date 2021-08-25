@@ -1,0 +1,52 @@
+// mobile-menu
+
+.mobile-menu__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 10;
+  padding: 48px 83px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%)
+}
+// .mobile-menu__list {
+// }
+.mobile-menu__link {
+  @include fonts ($primaryColor, null, 40px, 500, 1.8, 0.02em);
+  &--active {
+    color: $activeColor;
+  }
+}
+.mobile-contacts__list {
+  margin-top: auto;
+  margin-bottom: 64px;
+  & li:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.mobile-contacts__link {
+  @include fonts ($secondaryColor, null, 24px, 500, 1.8, 00.02em);
+  &--active {
+    @include fonts ($activeColor, null, 34px, 500, 1.8, 00.02em);
+
+  }
+}
+.mobile-social__list {
+  display: flex;
+  & li:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  & li:not(:first-child) {
+    padding-left: 10px;
+  }
+}
+
+.mobile-social__link {
+  @include fonts ($activeColor, null, 18px, 500, 1.22, 00.02em);
+
+}
