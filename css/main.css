@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.clients__title, .team__title, .work__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 h1,
 h2,
 h3,
@@ -66,19 +74,6 @@ a {
   text-align: center;
 }
 
-.nav {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .burger {
   width: 24px;
   height: 16px;
@@ -106,6 +101,8 @@ a {
   height: 3px;
   background-color: #000;
   border-radius: 2px;
+  -webkit-transition: height 0.05s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: height 0.05s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .burger[aria-expanded=true] .burger__btn {
   height: 0;
@@ -146,6 +143,19 @@ a {
           transform-origin: center center;
   bottom: 3px;
   background-color: #2196f3;
+}
+
+.nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav__list {
@@ -796,6 +806,53 @@ a {
           transform: translateX(0%);
 }
 
+.filter-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-list__btn {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 6px 22px;
+}
+.filter-list__btn:hover, .filter-list__btn:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  border: 1px solid #2196f3;
+}
+.filter-list__btn:hover, .filter-list__btn:focus {
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filter-list__btn--active {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
 /* Шапка сайта */
 .header {
   font-weight: 500;
@@ -1138,63 +1195,6 @@ a {
   text-align: center;
 }
 
-/* --- Portfollio --- */
-.portfolio {
-  border-top: 1px solid #ececec;
-  padding: 94px 0px;
-}
-
-.portfolio__tittle {
-  font-size: 0;
-}
-
-.filter-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
-}
-
-.filter-list__item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.filter-list__btn {
-  color: #212121;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.9;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  cursor: pointer;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  padding: 6px 22px;
-}
-.filter-list__btn:hover, .filter-list__btn:focus {
-  color: #ffffff;
-  background-color: #2196f3;
-  border: 1px solid #2196f3;
-}
-.filter-list__btn:hover, .filter-list__btn:focus {
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-.filter-list__btn--active {
-  color: #ffffff;
-  background-color: #2196f3;
-}
-
 .content-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1299,10 +1299,12 @@ a {
   line-height: 1.86;
 }
 
-.work__title, .team__title, .clients__title {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 30px;
+/* --- Portfollio --- */
+.portfolio {
+  border-top: 1px solid #ececec;
+  padding: 94px 0px;
+}
+
+.portfolio__tittle {
+  font-size: 0;
 }/*# sourceMappingURL=main.css.map */

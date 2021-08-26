@@ -1,10 +1,15 @@
 
+// units
 @import './units/variables';
 @import './units/mixin';
+@import './units/plaseholders';
+// base
 @import './base/null';
 @import './base/global-style';
 @import './base/container';
+// components
 @import './components/logo';
+@import './components/burger';
 @import './components/navigation';
 @import './components/contacts';
 @import './components/modal';
@@ -12,6 +17,8 @@
 @import './components/social-list';
 @import './components/address';
 @import './components/mobile-menu';
+@import './components/filter';
+// layout
 @import './layout/header';
 @import './layout/first-screen';
 @import './layout/advantages';
@@ -20,10 +27,9 @@
 @import './layout/clients';
 @import './layout/advantages';
 @import './layout/footer';
-@import './pages/portfolio';
-@import './components/filter';
 @import './layout/portf-content';
-@import './units/plaseholders';
+// pagees
+@import './pages/portfolio';
 
 
 
