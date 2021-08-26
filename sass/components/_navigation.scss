@@ -17,6 +17,7 @@
   border: none;
   cursor: pointer;
   padding: 0;
+  z-index: 11;
   @media screen and (min-width: 767px) {
     display: none;
   }
@@ -26,6 +27,9 @@
   height: 3px;
   background-color: #000;
   border-radius: 2px;
+  .burger[aria-expanded="true"] & {
+    height: 0;
+  }
   &::before,
   &::after {
     content: '';
@@ -33,16 +37,30 @@
     height: 3px;
     background-color: #000;
     border-radius: 2px;
+    transition: transform .6s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color .3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   &::before {
     position: absolute;
     right: 0;
-    top: 0px;
+    top: 1px;
+    .burger[aria-expanded="true"] & {
+      transform: rotate(-225deg);
+      transform-origin: center center;
+      top: 10px;
+      background-color: $activeColor;
+    }
   }
   &::after {
     position: absolute;
     right: 0;
     bottom: 0;
+    .burger[aria-expanded="true"] & {
+      transform: rotate(225deg);
+      transform-origin: center center;
+      bottom: 3px;
+      background-color: $activeColor;
+    }
   }
 }
 

@@ -11,7 +11,12 @@
   padding: 48px 83px 40px 40px;
   display: flex;
   flex-direction: column;
-  transform: translateX(100%)
+  transform: translateX(100%);
+  transition: transform .5s cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    display: none;    
+  }
+  
 }
 // .mobile-menu__list {
 // }
@@ -49,4 +54,9 @@
 .mobile-social__link {
   @include fonts ($activeColor, null, 18px, 500, 1.22, 00.02em);
 
+}
+
+
+.is-open {
+  transform: translateX(0%);
 }

@@ -27,13 +27,15 @@
         <!-- navigation -->
         <nav class="nav">
           <a href="#" class="logo"><span>Web</span>Studio</a>
-          <button class="burger menu-toggle js-open-menu">
-            <span
-              class="burger__btn"
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-            ></span>
+
+          <button
+            class="burger menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span class="burger__btn"></span>
           </button>
+
           <ul class="nav__list">
             <li><a href="#" class="nav__link nav__link--active">Студия</a></li>
             <li><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
@@ -456,7 +458,7 @@
             </ul>
           </address>
         </div>
-        
+
         <div class="footer__social">
           <p class="footer__social-title">Присоединяйтесь</p>
 
@@ -517,7 +519,6 @@
             </div>
           </form>
         </div>
-
       </div>
     </footer>
     <!-- /footer -->
@@ -589,17 +590,31 @@
     <!--/modal window -->
 
     <!-- mobile-menu window -->
-    <div class="mobile-menu__container" id="mobile-menu">
-
+    <div class="mobile-menu__container js-menu-container" id="mobile-menu">
       <ul class="mobile-menu__list">
-        <li><a href="" class="mobile-menu__link mobile-menu__link--active">Студия</a></li>
+        <!-- menu-toggle js-close-menu -->
+        <li>
+          <a href="" class="mobile-menu__link mobile-menu__link--active"
+            >Студия</a
+          >
+        </li>
         <li><a href="" class="mobile-menu__link">Портфолио</a></li>
         <li><a href="" class="mobile-menu__link">Контакты</a></li>
       </ul>
 
       <ul class="mobile-contacts__list">
-        <li><a class="mobile-contacts__link mobile-contacts__link--active" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        <li><a class="mobile-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li>
+          <a
+            class="mobile-contacts__link mobile-contacts__link--active"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li>
+          <a class="mobile-contacts__link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
       </ul>
 
       <ul class="mobile-social__list">
@@ -608,10 +623,9 @@
         <li><a href="#" class="mobile-social__link">LinkedIn</a></li>
         <li><a href="#" class="mobile-social__link">Instagram</a></li>
       </ul>
-
     </div>
     <!-- /menu window -->
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
