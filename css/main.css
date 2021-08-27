@@ -868,12 +868,11 @@ a {
 /* --- first-screen */
 .first-screen {
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/bg.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/first-screen/bg480.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/first-screen/bg480.jpg");
   background-size: cover;
   text-align: center;
   height: 400px;
-  width: 100%;
   margin: 0 auto;
 }
 .first-screen .container {
@@ -887,6 +886,31 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .first-screen {
+    background-image: url("../img/first-screen/bg480-2x.jpg");
+  }
+}
+@media screen and (min-width: 576px) {
+  .first-screen {
+    background-image: url("../img/first-screen/bg768.jpg");
+  }
+}
+@media screen and (min-width: 576px) and (min-device-pixel-ratio: 2), screen and (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 576px) and (min-resolution: 192dpi), screen and (min-width: 576px) and (min-resolution: 2dppx) {
+  .first-screen {
+    background-image: url("../img/first-screen/bg768-2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .first-screen {
+    background-image: url("../img/first-screen/bg1200.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .first-screen {
+    background-image: url("../img/first-screen/bg1200-2x.jpg");
+  }
 }
 
 .first-screen__wrapper {

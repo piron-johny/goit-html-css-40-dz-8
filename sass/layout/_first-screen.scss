@@ -6,19 +6,40 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../img/bg.jpg);
+    url('../img/first-screen/bg480.jpg');
   background-size: cover;
   text-align: center;
   // height: 600px;
   height: 400px;
   // max-width: 1600px;
-  width: 100%;
+  // width: 100%;
   margin: 0 auto;
   & .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../img/first-screen/bg480-2x.jpg');
+  }
+  @media screen and (min-width: 576px) {
+    background-image: url('../img/first-screen/bg768.jpg');
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../img/first-screen/bg768-2x.jpg');
+    }
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url('../img/first-screen/bg1200.jpg');
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../img/first-screen/bg1200-2x.jpg');
+    }
   }
 }
 
