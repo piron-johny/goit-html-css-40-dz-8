@@ -9,10 +9,10 @@
   @extend %title__section;
 }
 
-.team__list {
-  // display: flex;
-  // margin: -15px;
-}
+// .team__list {
+//   // display: flex;
+//   // margin: -15px;
+// }
 
 .team__item {
   text-align: center;
@@ -29,7 +29,7 @@
 }
 
 .team__wrapper {
-  padding: 30px 32px;
+  padding: 30px 32px 24px;
   background-color: $colorText;
 }
 

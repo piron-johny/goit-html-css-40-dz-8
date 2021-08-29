@@ -2,10 +2,14 @@
 body {
   @include fonts($primaryColor, (Roboto, sans-serif), 14px, 400, null, 0.03em);
   margin: 0;
+  padding-top: 62px;
+  @include respond-to(tablet) {
+    padding-top: 0px;
+  }
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
   background-size: cover;

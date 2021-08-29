@@ -6,6 +6,7 @@
   height: 100%;
   left: 0px;
   top: 0px;
+  z-index: 50;
 
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
@@ -16,6 +17,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 51;
   padding: 40px;
   width: 450px;
   background-color: $colorText;

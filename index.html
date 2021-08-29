@@ -195,13 +195,19 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./img/img-3.jpg"
-                alt="Фото Игоря Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture class="team__picture">
+                <source
+                  srcset="./img/team/img.webp 1x, img/team/img@2x.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  class="team__img"
+                  srcset="./img/team/img.jpg x1, ./img/team/img@2.jpg x2"
+                  alt="Фото Игоря Демьяненко"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -239,14 +245,21 @@
                 </ul>
               </div>
             </li>
+
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./img/img-2.jpg"
-                alt="Фото Ольги Репиной"
-                width="270"
-                height="260"
-              />
+              <picture class="team__picture">
+                <source
+                  srcset="./img/team/img-1.webp 1x, img/team/img@2x-1.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  class="team__img"
+                  srcset="./img/team/img-1.jpg x1, ./img/team/img@2-1.jpg x2"
+                  alt="Фото Ольги Репиной"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -284,14 +297,21 @@
                 </ul>
               </div>
             </li>
+
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./img/img-1.jpg"
-                alt="Фото Николая Тарасова"
-                width="270"
-                height="260"
-              />
+              <picture class="team__picture">
+                <source
+                  srcset="./img/team/img-2.webp 1x, img/team/img@2x-2.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  class="team__img"
+                  srcset="./img/team/img-2.jpg x1, ./img/team/img@2-2.jpg x2"
+                  alt="Фото Николая Тарасова"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -329,14 +349,21 @@
                 </ul>
               </div>
             </li>
+
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./img/img.jpg"
-                alt="Фото Михаила Ермакова"
-                width="270"
-                height="260"
-              />
+              <picture class="team__picture">
+                <source
+                  srcset="./img/team/img-3.webp 1x, img/team/img@2x-3.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  class="team__img"
+                  srcset="./img/team/img-3.jpg x1, ./img/team/img@2-3.jpg x2"
+                  alt="Фото Михаила Ермакова"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -598,8 +625,14 @@
             >Студия</a
           >
         </li>
-        <li><a href="./portfolio.html" class="mobile-menu__link">Портфолио</a></li>
-        <li><a href="#footer" class="mobile-menu__link" id="mobile-menu__contacts">Контакты</a></li>
+        <li>
+          <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+        </li>
+        <li>
+          <a href="#footer" class="mobile-menu__link" id="mobile-menu__contacts"
+            >Контакты</a
+          >
+        </li>
       </ul>
 
       <ul class="mobile-contacts__list">
@@ -632,6 +665,7 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

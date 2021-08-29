@@ -1,16 +1,18 @@
 // filter portfollio
 
 .filter-list {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 
-  margin-bottom: 50px;
+  margin: -8px -8px 32px;
 }
 
 .filter-list__item {
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 8px;
+  // }
+  margin: 8px;
+  display: inline-block;
 }
 
 .filter-list__btn {

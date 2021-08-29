@@ -4,6 +4,8 @@
   @include fonts(#000000, Raleway, 24px, 700, 1.2, null);
   // margin-right: 93px;
   padding: 16px 0px;
+  transition: opacity .3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
   & span {
     color: $activeColor;
   }
@@ -14,4 +16,11 @@
     padding: 0;
     text-align: center;
   }
+  @include respond-to(tablet) {
+    margin-right: 88px;
+  }
+}
+
+.logo-hidden {
+  opacity: 0;
 }

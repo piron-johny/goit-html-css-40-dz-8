@@ -1,35 +1,18 @@
-// modal window
-
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-    page: document.querySelector('[data-modal-no-scroll]'),
-  }
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-    refs.page.classList.toggle('no-scroll');
-
-  }
-})();
-
-
 // mobile menu
 
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const contactsMenu = document.querySelector('#mobile-menu__contacts');
+  const headerLogo = document.querySelector('.logo');
+
 
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
       openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
       mobileMenu.classList.toggle('is-open');
+      headerLogo.classList.toggle('logo-hidden')
 
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
@@ -53,3 +36,4 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+

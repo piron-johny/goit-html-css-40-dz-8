@@ -5,6 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include respond-to(tablet) {
+    width: 0%;
+  }
 }
 
 
@@ -14,7 +17,7 @@
   & li:not(:last-child) {
     margin-right: 50px;
   }
-  @media screen and (min-width: 768px) {
+  @include respond-to(tablet) {
     display: flex;
   }
 }

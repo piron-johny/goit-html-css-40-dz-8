@@ -8,7 +8,10 @@
   //   // display: flex;
   //   // align-items: baseline;
   // }
-  @media screen and (min-width: 480px){
+  @include respond-to(mobile) {
     width: 480px;
+  }
+  @include respond-to(tablet) {
+    width: 768px;
   }
 }

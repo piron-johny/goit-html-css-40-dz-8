@@ -25,15 +25,16 @@
   (min-resolution: 2dppx) {
     background-image: url('../img/first-screen/bg480-2x.jpg');
   }
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: 481px) {
     background-image: url('../img/first-screen/bg768.jpg');
+    background-size: cover;
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url('../img/first-screen/bg768-2x.jpg');
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     background-image: url('../img/first-screen/bg1200.jpg');
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -44,13 +45,13 @@
 }
 
 .first-screen__wrapper {
-  width: 696px;
+  width: 360px;
 }
 .first-screen__title {
   @include fonts($colorText, null, 26px, 900, 1.6, 0.06em);
   text-transform: uppercase;
   margin-bottom: 30px;
-  @media screen and (min-width: 480px){
+  @include respond-to (mobile) {
     @include fonts($colorText, null, 26px, 900, 1.6, 0.06em);
   }
 }

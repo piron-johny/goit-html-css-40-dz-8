@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vh;
+  width: 100%;
   height: 100vh;
   background-color: #fff;
   z-index: 10;
@@ -13,7 +13,10 @@
   flex-direction: column;
   transform: translateX(100%);
   transition: transform .5s cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 576px) {
+    text-align: center;
+  }
+  @include respond-to(tablet) {
     display: none;    
   }
   
@@ -48,6 +51,9 @@
   }
   & li:not(:first-child) {
     padding-left: 10px;
+  }
+  @media screen and (min-width: 576px) {
+    justify-content: center;
   }
 }
 

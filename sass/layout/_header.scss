@@ -1,8 +1,21 @@
 /* Шапка сайта */
 .header {
   @include fonts(null, null, null, 500, 1.14, 0.02em);
+  position: fixed;
+  background-color: #fff;
+  z-index: 11;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
   .container {
     display: flex;
+    @media screen and (max-width: 479px) {
+      width: 100vw;
+    }
+    @include respond-to(tablet) {
+      align-items: center;
+    }
   } 
 }
 
