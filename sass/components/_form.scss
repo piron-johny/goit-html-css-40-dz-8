@@ -3,11 +3,15 @@
 .footer__form {
   margin-left: auto;
 }
-.form-footer {
-  // display: flex;
-}
+// .form-footer {
+//   // display: flex;
+// }
 .form-footer__field-input {
   position: relative;
+  @include respond-to (tablet) {
+    width: 450px;
+    margin: 0 auto;
+  }
 }
 .form-footer__input {
   @include fonts(rgba(255, 255, 255, 0.6), null, 16px, 400, 1.25, null);

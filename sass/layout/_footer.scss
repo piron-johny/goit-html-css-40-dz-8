@@ -17,4 +17,10 @@
   margin-bottom: 20px;
   text-align: center;
 }
+@include respond-to (tablet) {
+  .footer__box  {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 

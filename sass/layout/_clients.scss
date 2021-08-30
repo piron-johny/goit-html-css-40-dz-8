@@ -11,12 +11,12 @@
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -15px;
+  margin: -15px;
 }
 
 .clients__item {
-  // width: 170px;
-  width: 210px;
+  // width: 210px;
+  flex-basis: calc((100% - 15px *4) / 2);
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -29,7 +29,10 @@
   //   margin-right: 30px;
   // }
   @media screen and (max-width: 479px) {
-    width: 100%;    
+    flex-basis: calc((100% - 15px * 2) / 1);    
+  }
+  @include respond-to (tablet) {
+    flex-basis: calc((100% - 15px * 6) / 3);
   }
 }
 .clients__link {

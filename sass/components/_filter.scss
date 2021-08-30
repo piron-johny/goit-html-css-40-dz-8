@@ -5,6 +5,10 @@
   // justify-content: center;
 
   margin: -8px -8px 32px;
+  @include respond-to (tablet) {
+    margin: -8px -8px 22px;
+    text-align: center;
+  }
 }
 
 .filter-list__item {

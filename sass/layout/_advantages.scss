@@ -3,20 +3,35 @@
 .advantages {
   padding-top: 60px;
   padding-bottom: 30px;
+  @include respond-to (tablet) {
+    padding-bottom: 60px;
+  }
 }
 
 .advantages__title {
   font-size: 0px;
 }
 
-// .advantages__list {
-//   // display: flex;
-// }
+@include respond-to (tablet) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+}
 
 .advantages__item {
   width: 100%;
   &:not(:last-child) {
     margin-bottom: 30px;
+    @include respond-to(tablet) {
+      margin-bottom: 15px;
+    }
+  }
+  @include respond-to(tablet) {
+    margin: 15px;
+    width: 0%;
+    flex-basis: calc((100% - 15px * 4) / 2);
   }
 }
 
@@ -35,6 +50,9 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   text-align: center;
+  @include respond-to(tablet) {
+    text-align: start;
+  }
 }
 
 .advantages__text {
