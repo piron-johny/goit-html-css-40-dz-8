@@ -6,6 +6,9 @@
   @include respond-to (tablet) {
     padding-bottom: 60px;
   }
+  @include respond-to (desktop) {
+    padding-top: 94px;
+  }
 }
 
 .advantages__title {
@@ -32,6 +35,9 @@
     margin: 15px;
     width: 0%;
     flex-basis: calc((100% - 15px * 4) / 2);
+  }
+  @include respond-to (desktop) {
+    flex-basis: calc((100% - 15px * 8) / 4);
   }
 }
 

@@ -5,12 +5,17 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
+  @include respond-to(tablet) {
+    margin-bottom: 0;
+  }
 }
+
 .social-list__item {
   .footer &:not(:last-child) {
     margin-right: 10px;
   }
 }
+
 .social-list__link {
   width: 44px;
   height: 44px;

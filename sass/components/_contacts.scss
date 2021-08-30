@@ -1,8 +1,6 @@
 // contacts
 
 .contacts {
-  // display: flex;
-  // margin-left: auto;
   .address & {
     display: block;
     color: rgba(255, 255, 255, 0.6);
@@ -17,15 +15,19 @@
     display: block;
     margin-left: auto;
   }
+  @include respond-to(desktop) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contacts__item {
-  // .header &:last-child {
-  //   margin-left: 50px;
-  // }
   .address & {
     display: flex;
     justify-content: center;
+    @include respond-to (desktop) {
+      display: block;
+    }
   }
   .address &:last-child {
     margin-left: 0;
@@ -38,14 +40,17 @@
     padding: 0;
     margin-left: 0px;
   }
+  @include respond-to(desktop) {
+    .header &:last-child {
+      margin-left: 50px;
+    }
+  }
 }
 
 .contacts__link {
-  // @include fonts($secondaryColor, null, null, 500, 1.14, 00.02em);
   @include fonts($secondaryColor, null, 12px, 400, 1.16, null);
   display: flex;
   align-items: center;
-  // padding: 32px 0;
   padding: 5px 0;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -54,6 +59,10 @@
   }
   .address & {
     padding: 0;
+  }
+  @include respond-to(desktop) {
+    @include fonts($secondaryColor, null, 14px, 500, 1.14, 00.02em);
+    padding: 32px 0;
   }
 }
 

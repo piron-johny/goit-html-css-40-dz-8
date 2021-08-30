@@ -2,7 +2,6 @@
 
 .logo {
   @include fonts(#000000, Raleway, 24px, 700, 1.2, null);
-  // margin-right: 93px;
   padding: 16px 0px;
   transition: opacity .3s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
@@ -18,9 +17,16 @@
     @include respond-to(tablet) {
       margin-right: 0px;
     }
+    @include respond-to (desktop) {
+      text-align: left;
+    }
   }
   @include respond-to(tablet) {
     margin-right: 88px;
+  }
+  @include respond-to(desktop) {
+    margin-right: 93px;
+    @include fonts(#000000, Raleway, 26px, 700, 1.15, null);
   }
 }
 

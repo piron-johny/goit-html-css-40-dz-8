@@ -35,6 +35,12 @@
     margin-bottom: 12px;
     text-align: center;
   }
+  @include respond-to (desktop) {
+    @include fonts($secondaryColor, null, null, null, 1.17, null);
+  }
+  @include respond-to (desktop) {
+    width: 528px;
+  }
 }
 
 .is-hidden {

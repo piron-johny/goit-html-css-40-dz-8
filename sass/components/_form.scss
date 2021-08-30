@@ -3,19 +3,27 @@
 .footer__form {
   margin-left: auto;
 }
-// .form-footer {
-//   // display: flex;
-// }
+
+@include respond-to (desktop) {
+  .form-footer {
+    display: flex;
+  }
+}
+
 .form-footer__field-input {
   position: relative;
   @include respond-to (tablet) {
     width: 450px;
     margin: 0 auto;
   }
+  @include respond-to (desktop) {
+    width: 358px;
+    margin: 0;
+  }
 }
+
 .form-footer__input {
   @include fonts(rgba(255, 255, 255, 0.6), null, 16px, 400, 1.25, null);
-  // width: 358px;
   width: 100%;
   height: 50px;
   background-color: transparent;
@@ -35,7 +43,14 @@
   &::placeholder {
     color: transparent;
   }
+  @include respond-to (desktop) {
+    width: 358px;
+  }
+  @include respond-to (desktop) {
+    margin-bottom: 0;
+  }
 }
+
 .form-footer__label {
   @include fonts(rgba(255, 255, 255, 0.6), null, 16px, null, 1.25, null);
   position: absolute;
@@ -43,6 +58,9 @@
   left: 16px;
   transform: translateY(-50%);
   transition: transform 0.2s linear;
+  @include respond-to (desktop) {
+    top: 50%;
+  }
 }
 
 
@@ -53,9 +71,11 @@
 
 .form-footer__btn {
   @include btn();
-  // margin-left: 12px;
   padding: 9px 29px;
   letter-spacing: 0.06em;
+  @include respond-to (desktop) {
+    margin-left: 12px;    
+  }
 }
 
 .form-footer__icon {

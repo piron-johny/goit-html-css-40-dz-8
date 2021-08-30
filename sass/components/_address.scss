@@ -13,5 +13,8 @@
     color: $activeColor;
   }
   text-align: center;
+  // @include respond-to (desktop) {
+  //   text-align: left;
+  // }
 }
 

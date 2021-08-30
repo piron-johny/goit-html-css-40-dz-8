@@ -6,8 +6,13 @@
 }
 
 .footer__address {
-  // margin-right: 70px;
   margin-bottom: 60px;
+  @include respond-to (tablet) {
+    margin-bottom: 0;
+  }
+  @include respond-to (desktop) {
+    margin-right: 70px;
+  }
 }
 
 .footer__social-title,
@@ -16,11 +21,21 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   text-align: center;
-}
-@include respond-to (tablet) {
-  .footer__box  {
-    display: flex;
-    justify-content: space-around;
+  @include respond-to (desktop) {
+    text-align: left;
   }
 }
+.footer__box {
+  @include respond-to (tablet) {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 60px;
+    }
+  @include respond-to (desktop) {
+    margin-bottom: 0px;
+    align-items: baseline;
+  }
+}
+
+
 

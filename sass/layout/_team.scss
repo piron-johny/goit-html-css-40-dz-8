@@ -3,6 +3,9 @@
 .team {
   background-color: $btnBg;
   padding: 60px 0px;
+  @include respond-to (desktop) {
+    padding: 94px 0;
+  }
 }
 
 .team__title {
@@ -33,13 +36,19 @@
     width: 100%;
   }
   @include respond-to (tablet) {
-    flex-basis: calc((100% - 15px *4) / 2);
+    flex-basis: calc((100% - 15px * 4) / 2);
+  }
+  @include respond-to (desktop) {
+    flex-basis: calc((100% - 15px * 8) / 4);
   }
 }
 
 .team__wrapper {
   padding: 30px 32px 24px;
   background-color: $colorText;
+  @include respond-to (desktop) {
+    padding-bottom: 30px;
+  }
 }
 
 .team__subtitle {

@@ -4,14 +4,17 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  // .footer & {
-  //   // display: flex;
-  //   // align-items: baseline;
-  // }
   @include respond-to(mobile) {
     width: 480px;
   }
   @include respond-to(tablet) {
     width: 768px;
+  }
+  @include respond-to(desktop) {
+    width: 1200px;
+    .footer & {
+      display: flex;
+      align-items: baseline;
+    }
   }
 }

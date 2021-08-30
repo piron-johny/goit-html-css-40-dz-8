@@ -10,8 +10,6 @@
   }
 }
 
-
-
 .nav__list {
   display: none;
   & li:not(:last-child) {
@@ -23,7 +21,7 @@
 }
 
 .nav__link {
-  @include fonts($primaryColor, null, null, 500, 1.14, 0.02em);
+  @include fonts($primaryColor, null, null, 500, 1.17, 0.02em);
   position: relative;
   padding: 32px 0px;
   display: block;

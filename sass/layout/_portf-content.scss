@@ -16,6 +16,9 @@
   @include respond-to (tablet) {
     flex-basis: calc((100% - 15px * 4) / 2);
   }
+  @include respond-to (desktop) {
+    flex-basis: calc((100% - 15px * 6) / 3);
+  }
 }
 
 .content-list__link {
@@ -81,6 +84,16 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  @include respond-to(tablet) {
+    .content-list__item:first-child & {
+      height: 142px;
+    }
+  }
+  @include respond-to (desktop) {
+    .content-list__item:first-child & {
+      height: 0%;
+    }
+  }
 }
 
 .content-list__tittle {

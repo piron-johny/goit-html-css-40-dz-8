@@ -1,9 +1,11 @@
 //plaseholders
 
 %title__section {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.17;
+  @include fonts(null, null, 28px, 700, 1.17, null);
   text-align: center;
   margin-bottom: 30px;
+  @include respond-to (desktop) {
+    @include fonts(null, null, 36px, 700, 1.17, null);
+    margin-bottom: 50px;
+  }
 }

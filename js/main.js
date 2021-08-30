@@ -12,7 +12,7 @@
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
       openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
       mobileMenu.classList.toggle('is-open');
-      headerLogo.classList.toggle('logo-hidden')
+      headerLogo.classList.toggle('logo-hidden');
 
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
@@ -23,6 +23,7 @@
   openMenuBtn.addEventListener('click', toggleMenu);
   contactsMenu.addEventListener('click', e => {
     mobileMenu.classList.remove('is-open');
+    headerLogo.classList.remove('logo-hidden');
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
