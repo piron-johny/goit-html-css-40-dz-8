@@ -30,6 +30,9 @@
   .burger:focus & {
     background-color: $activeColor;
   }
+  .burger[aria-expanded="false"] & {
+    background-color: #000;
+  }
   &::before,
   &::after {
     content: '';
@@ -42,6 +45,9 @@
     .burger:hover &,
     .burger:focus & {
        background-color: $activeColor;
+    }
+    .burger[aria-expanded="false"] & {
+      background-color: #000;
     }
   }
   &::before {

@@ -184,6 +184,10 @@ a {
   background-color: #2196f3;
 }
 
+.burger[aria-expanded="false"] .burger__btn {
+  background-color: #000;
+}
+
 .burger__btn::before, .burger__btn::after {
   content: '';
   width: 100%;
@@ -200,6 +204,10 @@ a {
 .burger:focus .burger__btn::before, .burger:hover .burger__btn::after,
 .burger:focus .burger__btn::after {
   background-color: #2196f3;
+}
+
+.burger[aria-expanded="false"] .burger__btn::before, .burger[aria-expanded="false"] .burger__btn::after {
+  background-color: #000;
 }
 
 .burger__btn::before {
