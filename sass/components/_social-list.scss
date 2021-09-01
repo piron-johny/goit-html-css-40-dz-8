@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
   @include respond-to(tablet) {
     margin-bottom: 0;
   }
