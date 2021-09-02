@@ -20,26 +20,46 @@
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url('../img/first-screen/bg480-2x.jpg');
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../img/first-screen/bg480-2x.jpg');
   }
   @media screen and (min-width: 481px) {
-    background-image: url('../img/first-screen/bg768.jpg');
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../img/first-screen/bg768.jpg');
     background-size: cover;
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url('../img/first-screen/bg768-2x.jpg');
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../img/first-screen/bg768-2x.jpg');
     }
   }
   @media screen and (min-width: 769px) {
-    background-image: url('../img/first-screen/bg1200.jpg');
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../img/first-screen/bg1200.jpg');
     max-width: 1600px;
     width: 100%;
     height: 600px;
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url('../img/first-screen/bg1200-2x.jpg');
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../img/first-screen/bg1200-2x.jpg');
     }
   }
 }
