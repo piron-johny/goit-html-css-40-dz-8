@@ -13,13 +13,12 @@
   flex-direction: column;
   transform: translateX(100%);
   transition: transform .5s cubic-bezier(0.4, 0, 0.2, 1);
-  // @media screen and (min-width: 576px) {
-  //   text-align: center;
-  // }
   @include respond-to(tablet) {
     display: none;    
   }
-  
+  @media screen and (max-width: 420px) {
+    padding: 48px 40px 40px 40px
+  }  
 }
 // .mobile-menu__list {
 // }
@@ -40,7 +39,9 @@
   @include fonts ($secondaryColor, null, 24px, 500, 1.8, 00.02em);
   &--active {
     @include fonts ($activeColor, null, 34px, 500, 1.8, 00.02em);
-
+    @media screen and (max-width: 420px) {
+      @include fonts ($activeColor, null, 27px, 500, 1.8, 00.02em);
+    }
   }
 }
 .mobile-social__list {
